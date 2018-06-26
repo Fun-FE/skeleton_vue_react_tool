@@ -12,7 +12,7 @@ e.g:
 Tips: 如不能运行请检查如下几点:
 1. build/: skeleton.js  webpack.skeleton.conf.js 文件存在
 2. page/: xx.html 文件存在, 并文件内容包含vue-server-renderer所需的`<!--vue-ssr-outlet-->`
-3. rjs/skeleton/: xx.vue 文件存在
-4. rjs/: portal_skeleton.js存在
+3. src/skeleton/: xx.vue 文件存在
+4. src/: portal_skeleton.js存在
 5. skeleton.sh 文件存在
 
