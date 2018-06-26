@@ -6,7 +6,7 @@
 # 骨架屏生成工具原理
 - vue: 使用vue-server-renderer/server-plugin生成skeleton.json, vue-server-renderer.createBundleRenderer由skeleton.json生成dom css js, 插入需要添加骨架屏的页面中.
 - react: 大致同理vue, 但react-dom/server由组件渲染出html字符串, 没有必要经过webpack, 
-因此css预处理 autoprefixer babel这些在js代码中执行完成而非利用webpack打包
+因此css预处理 babel这些在js代码中执行完成而非利用webpack打包
 
 # Support
 - [o] vue骨架生成
@@ -20,9 +20,6 @@
 npm i
 sh build.sh [xx...] 或 参见下方Demo
 ```
-
-
-
 
 # Demo
 参见vue_skeleton_files/或react_skeleton_files/下 README.md
