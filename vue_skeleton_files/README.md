@@ -16,14 +16,3 @@ Tips: 如不能运行请检查如下几点:
 4. rjs/: portal_skeleton.js存在
 5. skeleton.sh 文件存在
 
-
-
-
-
-
-
-
-
-
-
-
