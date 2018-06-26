@@ -1,0 +1,18 @@
+{
+  "presets": ["stage-0", "es2015", "react"],
+  "plugins": [
+    ["transform-runtime",
+        {
+      "helpers": true, // defaults to true  Removes the inline babel helpers and uses the module babel-runtime/helpers instead.
+      "polyfill": true, // defaults to true  用于  Automatically requires babel-runtime/core-js and maps ES6 static methods and built-ins.
+      "regenerator": false // defaults to true  Automatically requires babel-runtime/regenerator when you use generators/async functions.
+    }],
+  ],
+  "env": {
+      "skeleton": {
+          "plugins": [
+              "transform-css-import-to-string"
+          ]
+      }
+  }
+}

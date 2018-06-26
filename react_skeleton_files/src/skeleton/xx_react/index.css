@@ -1,0 +1,23 @@
+body {
+  background: #f0f0f0;
+}
+.skeleton {
+  width: 100%;
+  max-width: 11.7188rem;
+  margin: 0.7813rem auto;
+}
+.skeleton .title {
+  width: 60%;
+  height: 0.6250rem;
+  margin: 0.3125rem 0;
+  background: #ccc;
+}
+.skeleton .content {
+  width: 95%;
+  height: 1.5625rem;
+  margin: 0.1563rem 0;
+  background: #ccc;
+}
+.a {
+  background-color: blue;
+}

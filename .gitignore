@@ -1,0 +1,52 @@
+#osx
+.DS_Store
+coverage
+#webstorm
+.idea
+.idea/.name
+.idea/misc.xml
+.idea/modules.xml
+.idea/static-weixin.iml
+.idea/vcs.xml
+.idea/workspace.xml
+
+#grunt打包
+.tmp
+release
+
+#node模块
+node_modules
+Generated_files.xml
+.module-cache
+
+#shell运行产物
+nohup.out
+
+#bower模块
+bower_components
+
+#项目部分
+#css 这个暂时不能排除 要先修改grunt后才能排除
+rjs/bundle.js
+js/bundle.min.js
+
+#独立组件引用less时不需要的css排除
+css/billorderinfo.css
+
+assets
+npm-debug.log
+
+#sigua only
+tem
+
+#存放 服务端返回 json 数据 防止接口蹦掉
+json
+
+#css map
+*.css.map
+out.txt
+/dist
+yarn.lock
+yarn-error.log
+
+package-lock.json
