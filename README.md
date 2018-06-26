@@ -15,11 +15,12 @@
 - [o] 开发体验同普通组件
 
 # Use
-根据自己工程目录结构, 拷贝vue_skeleton_files/ react_skeleton_files/下必要文件到自己工程目录, 并适配修改
+1.根据自己工程目录结构, 拷贝vue_skeleton_files/ react_skeleton_files/下必要文件到自己工程目录, 并适配修改
 ```bash
 npm i
 sh build.sh [xx...] 或 参见下方Demo
 ```
+2.一次性使用的, 直接clone此工程, 修改骨架屏组件, 将生成的骨架屏 dom css 拷贝至原工程
 
 # Demo
 参见vue_skeleton_files/或react_skeleton_files/下 README.md
