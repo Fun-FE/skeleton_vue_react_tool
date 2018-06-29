@@ -21,6 +21,28 @@ npm i
 sh build.sh [xx...] 或 参见下方Demo
 ```
 2.一次性使用的, 直接clone此工程, 修改骨架屏组件, 将生成的骨架屏 dom css 拷贝至原工程
+3.一个html页面只支持同时存在一个骨架屏, SPA应用需要根据不同路由展示不同骨架屏时, 一种解决方法为:
+html中同时包含所有骨架dom css 并打标识, html script中根据url删除不必要骨架dom css
+4.项目中使用了extract-text-webpack-plugin的注意exclude skeleton/下样式,react中不需要
+vue_e.g.
+```javascript
+{
+                test: /\.vue$/,
+                loader: 'vue-loader',
+                options: {
+                    loaders: utils.cssLoaders({
+                        sourceMap: config.dev.cssSourceMap,
+                        extract: true
+                    }),
+                    postcss: [px2rem({ remUnit: 37.5 })],
+                    autoprefixer: {
+                        browsers: ['last 10 versions', 'Android > 4', 'iOS > 6', 'Safari > 6']
+                    }
+                },
+                exclude: /skeleton/  // 新增内容在这里
+}
+
+```
 
 # Demo
 参见vue_skeleton_files/或react_skeleton_files/下 README.md
