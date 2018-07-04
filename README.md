@@ -26,7 +26,7 @@ sh build.sh [xx...] 或 参见下方Demo
 3.一个html页面只支持同时存在一个骨架屏, SPA应用需要根据不同路由展示不同骨架屏时, 一种解决方法为:
 html中同时包含所有骨架dom css 并打标识, html script中根据url删除不必要骨架dom css. 优化_骨架css通用以减少传输内容
 
-4.项目中使用了extract-text-webpack-plugin的注意exclude skeleton/下样式,react中不需要
+4.项目中使用了extract-text-webpack-plugin的注意在不需要调试骨架屏的正常启动本地dev-server时exclude skeleton/下防止样式被打包_属于优化内容,react中不需要
 vue_e.g.
 ```javascript
 {
@@ -42,7 +42,7 @@ vue_e.g.
                         browsers: ['last 10 versions', 'Android > 4', 'iOS > 6', 'Safari > 6']
                     }
                 },
-                exclude: /skeleton/  // 新增内容在这里
+                exclude: /skeleton/  // 正常启动本地dev-server时 注释掉骨架屏组件引用后新增此行, 开发调试骨架屏时注释本行
 }
 
 ```
