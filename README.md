@@ -1,6 +1,6 @@
 # 骨架屏生成工具
-支持vue react
-(Tips: 小程序骨架屏写法参见(url: https://github.com/jayZOU/skeleton, 文件路径: src/pages/index/index.wxml))
+- 支持vue react
+- (Tips: 小程序骨架屏写法参见(url: https://github.com/jayZOU/skeleton, 文件路径: src/pages/index/index.wxml))
 
 # 骨架屏原理
 前后端分离时, 前端需要经过加载资源 执行, 才能渲染出页面内容, 将骨架屏dom css js代码直接写入html中, 达到添加骨架屏目的
