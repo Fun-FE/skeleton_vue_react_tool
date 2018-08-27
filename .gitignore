@@ -30,14 +30,8 @@ bower_components
 rjs/bundle.js
 js/bundle.min.js
 
-#独立组件引用less时不需要的css排除
-css/billorderinfo.css
-
 assets
 npm-debug.log
-
-#sigua only
-tem
 
 #存放 服务端返回 json 数据 防止接口蹦掉
 json
